@@ -1,0 +1,17 @@
+---
+title: "Student Report"
+author: "Mo"
+output: word_document
+---
+
+# Exam Results
+
+This report analyses student exam scores.
+
+```{r}
+scores <- data.frame(
+  name = c("Alice","Bob","Cara","Dan","Ella"),
+  score = c(80,65,90,70,85)
+)
+
+summary(scores$score)
