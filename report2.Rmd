@@ -1,0 +1,24 @@
+---
+title: "Student Report"
+output: html_document
+---
+
+# Exam Results
+
+```{r}
+scores <- read.csv("data/scores.csv")
+summary(scores$score)
+
+barplot(scores$score, names.arg = scores$name,
+        col = "skyblue", main = "Exam Scores",
+        ylab = "Score")
+```
+---
+
+### ✅ What happens when you render this
+- It loads your `data/scores.csv`.  
+- Prints a **summary table** of the scores.  
+- Plots a **bar chart** of the scores.  
+- Produces `report2.html` (by default in the same folder, unless you specify `output_file`).  
+
+---

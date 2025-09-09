@@ -1,0 +1,9 @@
+.Rhistory
+.Rproj.user/
+.RData
+.Ruserdata
+.Rproj.user
+.Rproj
+__pycache__/
+.ipynb_checkpoints/
+outputs/
